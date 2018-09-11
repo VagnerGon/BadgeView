@@ -1,5 +1,6 @@
 # BadgeView
 Badge view with animated effect which shows a bitmap or a text.
+FIXED: Null Pointer Exception Bug and Updated Dependencies/Gradle
 
 ![animation](docs/badgeview-spongebob.gif)
 ### Usage 
@@ -45,7 +46,7 @@ repositories {
 //...
 dependencies {
     //...
-    compile 'com.github.elevenetc:badgeview:v1.0.0'
+    implementation 'com.github.pedromalta:badgeview:1.0.3'
 }
 ```
 ### Licence
