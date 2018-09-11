@@ -27,5 +27,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:25.4.0'
-    implementation 'com.github.elevenetc:badgeview:v1.0.0'
+    //implementation 'com.github.pedromalta:badgeview:v1.0.1'
+    implementation project(":library")
 }
