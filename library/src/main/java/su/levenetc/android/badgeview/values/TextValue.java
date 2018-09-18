@@ -34,12 +34,12 @@ public class TextValue extends IValue<CharSequence> implements Parcelable {
 
 	public TextValue(@NonNull CharSequence value, Paint paint) {
 		this.paint = paint;
-		setValue(value);
+		this.value = value;
 	}
 
 	public TextValue(@NonNull Number value, Paint paint) {
 		this.paint = paint;
-		setValue(value.toString());
+		this.value = value.toString();
 	}
 
 	public void setTextColor(int color) {
@@ -48,12 +48,10 @@ public class TextValue extends IValue<CharSequence> implements Parcelable {
 
 	public TextValue(Parcel in) {
 
-		String value = in.readString();
-                if(paint != null){
-		    paint.setColor(in.readInt());
-		    paint.setTextSize(in.readFloat());
-                }
-		setValue(value);
+		this.value = in.readString();
+		this.paint = new Paint();
+		this.paint.setColor(in.readInt());
+		this.paint.setTextSize(in.readFloat());
 	}
 
 	@Override public void setValue(CharSequence value) {
