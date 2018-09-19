@@ -49,9 +49,9 @@ public class TextValue extends IValue<CharSequence> implements Parcelable {
 	public TextValue(Parcel in) {
 
 		this.value = in.readString();
-		this.paint = new Paint();
-		this.paint.setColor(in.readInt());
-		this.paint.setTextSize(in.readFloat());
+		//this.paint = new Paint();
+		//this.paint.setColor(in.readInt());
+		//this.paint.setTextSize(in.readFloat());
 	}
 
 	@Override public void setValue(CharSequence value) {
