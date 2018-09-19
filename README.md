@@ -46,7 +46,7 @@ repositories {
 //...
 dependencies {
     //...
-    implementation 'com.github.pedromalta:badgeview:1.0.6'
+    implementation 'com.github.pedromalta:badgeview:1.0.7'
 }
 ```
 ### Licence
