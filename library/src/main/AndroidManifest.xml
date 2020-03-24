@@ -2,6 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="su.levenetc.android.badgeview">
 
-    <application android:allowBackup="true"></application>
+    <application></application>
 
 </manifest>
